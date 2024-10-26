@@ -1,0 +1,70 @@
+<header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="{% url 'homepage' %}">SRIT <i class="fas fa-graduation-cap ms-1"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'homepage' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'eventpage' %}">Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'clubpage' %}" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Clubs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{% url 'tmpage' %}">Toast Masters</a></li>
+                            <li><a class="dropdown-item" href="{% url 'saropage' %}">SARO</a></li>
+                            <li><a class="dropdown-item" href="{% url 'sbpage' %}">Shutter Bugs</a></li>
+                            <li><a class="dropdown-item" href="{% url 'nsspage' %}">NSS</a></li>
+                            <li><a class="dropdown-item" href="{% url 'nccpage' %}">NCC</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contactpage' %}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'aboutpage' %}">About Us</a>
+                    </li>
+                    {% if request.user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'createpage' %}">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logoutpage' %}">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'staffpage' %}">Staff</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'loginpage' %}">Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% if not is_login_page %}
+            <div class="cont-ser-position">
+                <nav class="navigation">
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="mode-container">
+                                <i class="gg-sun"></i>
+                                <i class="gg-moon"></i>
+                            </div>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+            {% endif %}
+        </nav>
+    </div>
+</header>

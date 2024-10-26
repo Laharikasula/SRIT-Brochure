@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>College | Website</title>
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <section class="inner-banner py-5">
+        <div class="w3l-breadcrumb py-lg-5">
+            <div class="container pt-5 pb-sm-4 pb-2">
+                <h4 class="inner-text-title font-weight-bold pt-5">NSS</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li class="active"><i class="fas fa-angle-right mx-2"></i>NSS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="w3l-aboutblock1 py-5" id="about">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-right-faq">
+                    <h5 class="sub-title mb-2">NSS</h5>
+                    <h3 class="title-style text-start">THE NATIONAL SERVICE SCHEME(NSS)</h3>
+                    <p class="mt-4">"The National Service Scheme (NSS) is a public service program 
+                        launched by the Government of India to engage youth in community service and 
+                        nation-building activities. Founded in 1969, NSS operates under the Ministry 
+                        of Youth Affairs and Sports and is open to students at colleges and universities 
+                        across India."</p>
+                </div>
+                <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5">
+                    <img src="/assets/images/nss5.png" alt="" class="img-fluid radius-image">
+                </div>
+            </div><br>
+            <div>
+                <p><b>Mission and Vision:</b><br>
+                    NSS aims to foster a spirit of voluntary service and social responsibility among 
+                    young people. It encourages students to actively participate in various community 
+                    projects, thereby promoting the development of leadership skills, empathy, and a 
+                    strong commitment to social justice. The motto of NSS, "Not Me, But You," reflects 
+                    its focus on selfless service and the importance of giving back to society.
+                </p><br>
+                <p><b>Skill Development and Recognition:</b><br>
+                    Through their participation in NSS, students develop crucial life skills such as 
+                    teamwork, leadership, and problem-solving. They also gain practical experience in 
+                    project management, communication, and community engagement. NSS volunteers are often
+                     recognized for their contributions through awards and certificates, which add value 
+                     to their academic and professional profiles.</p>
+            </div>
+        </div>
+    </section>
+    <div class="w3l-team-grids-sec py-5" id="team">
+        <div class="container pb-lg-5 pb-md-4 pb-2">
+            <h5 class="sub-title text-center">Team of Professionals</h5>
+            <div class="row cards justify-content-center">
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <a href="#img" class="card">
+                        <img src="assets/images/pichipullaha.jpg" class="card__image radius-image" alt="" />
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                                    <path />
+                                </svg>
+                                <div class="card__header-text">
+                                    <h3 class="card__title">Mr. G. Chinnapullaiah</h3>
+                                    <span class="card__status">Coordinator</span>
+                                    
+                                </div>
+                            </div>
+                            <p class="card__description">Mr. G. Chinnapullaiah is the dedicated and 
+                                inspirational Coordinator of the National Service Scheme (NSS).</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="w3l-courses py-5" id="courses">
+        <div class="container pb-lg-5 pb-md-4 pb-2">
+            <h3 class="title-style text-center">Best Captures</h3>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss5.png" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss3.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss1.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss4.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss6.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss7.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 item mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative">
+                            <a class="zoom d-block">
+                                <img class="card-img-bottom d-block" src="assets/images/nss8.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+        <div style="text-align: center;">
+            
+            <a href="https://www.instagram.com/srit_ses_toastmasters_club/?hl=en" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:30px;height:30px;">
+            </a>
+        </div>
+        <div style="text-align: center;">
+           
+            <a href="mailto:srit.eloquentspeakers@srit.ac.in" style="font-size: 30px; color: #add8e6; text-decoration: none;">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+    <br><br>
+<footer class="w3l-footer-16">
+    <div class="footer-top-16 py-5">
+        <div class="container pt-lg-5 pt-md-4 pt-2 pb-lg-4 pb-2">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <h3>About Us</h3>
+                    <p>This Society was established by Founder-cum-Secretary Sri Aluru Sambasiva Reddy in November 2007 in memory of his mother,
+                        Late Smt. Aluru Narayanamma, to give shape to his firm belief that<b> “EDUCATION IS A KEY ENABLER FOR PROGRESS”.</b></p>
+                    <div class="columns-2 mt-4">
+                        <ul class="social">
+                            <li><a href="https://www.linkedin.com/school/sritatp/"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="https://www.srit.ac.in/"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 column ps-xl-5 mt-sm-0 mt-4">
+                    <h3>Quick Link</h3>
+                    <ul class="footer-gd-16">
+                        <li><a href="{% url 'aboutpage' %}">About Us</a></li>
+                        <li><a href="{% url 'eventpage' %}">Events</a></li>
+                        
+                        <li><a href="{% url 'clubpage' %}">Clubs</a></li>
+                        <li><a href="{% url 'contactpage' %}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6 column ps-xl-5 pe-lg-0 mt-lg-0 mt-4">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact-list">
+                        <li class=""><i class="fas fa-map-marker-alt"></i><span>515701,SRIT Rotarypuram Anantapur</span></li>
+                        <li class="mt-2"><i class="fas fa-phone-alt"></i><span><a href="tel:+9515611111">+9515611111</a></span></li>
+                    </ul>
+                    <div class="footer-botm mt-3">
+                        <h6>Open Hours:</h6>
+                        <p class="mt-2"><span>Mon - Fri</span> : 9:30Am - 4:30Pm</p>
+                        <p> <span>Sat - Sun</span> : CLOSED</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="copy-section text-center py-4">
+        <p class="copy-text py-1">&copy; All rights reserved. Design by <a>We_5</a>
+        </p>
+    </div>
+</footer>
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+</button>
+<script>
+    window.onscroll = function () {
+        scrollFunction()
+    };
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#owl-demo1").owlCarousel({
+            loop: true,
+            
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                768: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                    loop: false
+                }
+            }
+        })
+    })
+</script>
+<script src="assets/js/theme-change.js"></script>
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

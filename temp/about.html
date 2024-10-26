@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>College | Website</title>
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+<style>
+    
+    .smaller-image {
+        max-width: 70%; /* Adjust the percentage as needed */
+        height: auto;   /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional, for rounded corners */
+        display: block;
+        margin: 0 auto; /* Center the image */
+    }
+    .card {
+        height: 400px; /* Set the desired height for the card */
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+        .card__image {
+            width: 200%; /* Adjust width to fit the card container */
+            height: 1000px; /* Set the desired height for the images */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+        
+</style> 
+<body>
+    {% include 'navbar.html' %}
+    <section class="inner-banner py-5">
+        <div class="w3l-breadcrumb py-lg-5">
+            <div class="container pt-5 pb-sm-4 pb-2">
+                <h4 class="inner-text-title font-weight-bold pt-5">About Us</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li class="active"><i class="fas fa-angle-right mx-2"></i>About</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="w3l-aboutblock1 py-5" id="about">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-right-faq">
+                    <h5 class="sub-title mb-2">About Us</h5>
+                    <h3 class="title-style text-start">Hello,Welcome to the SRIT
+                        Events & Clubs Hub</h3>
+                    <p class="mt-4">Where we providing a dedicated space for showcasing and engaging with our college clubs and events. Our mission is to enhance the college experience by offering a seamless, 
+                        web-based interface where students can easily discover, join, and participate in various campus activities.</p>
+                    
+                </div>
+                <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5">
+                    <img src="/assets/images/aboutus.jpg" alt="" class="img-fluid radius-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="w3l-whyblock py-4">
+        <div class="pb-lg-5 pb-md-4 pb-2">
+            <div class="row align-items-center m-0">
+                <div class="col-lg-6 ps-0">
+                    <img src="assets/images/ab.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 ps-xl-5 ps-lg-4 mt-lg-0 mt-5">
+                    <h5 class="sub-title">Our Features</h5>
+                    <h3 class="title-style mb-4">Why Choose Us?</h3>
+                    <p>Our platform is designed to be the ultimate resource for students seeking to explore and engage with
+                         campus life. Here’s why you should choose us:for students to access 
+                         and engage with the opportunities that matter to them.
+                    </p>
+                    <div class="two-grids mt-5">
+                        <div class="grids_info">
+                            <i class="fas fa-search"></i>
+
+                            <div class="detail">
+                                <h4>Discover Club Activities</h4>
+                                <p>Easily explore various college clubs and their activities,
+                                     making it simpler to find and join groups that match your interests.</p>
+                            </div>
+                        </div>
+                        <div class="grids_info mt-xl-5 mt-lg-4 mt-5">
+                            <i class="fas fa-bell"></i>
+
+                            <div class="detail">
+                                <h4>Stay Updated</h4>
+                                <p>Keep track of all upcoming events, ensuring you never miss out on exciting
+                                     opportunities and campus happenings.</p>
+                            </div>
+                        </div>
+                        <div class="grids_info mt-xl-5 mt-lg-4 mt-5">
+                            <i class="fas fa-hands-helping"></i>
+
+                            <div class="detail">
+                                <h4>Get Involved</h4>
+                                <p>Connect with diverse student organizations and get actively involved in campus life, enriching your college experience.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w3l-aboutblock1 py-5" id="about">
+        <div class="container py-md-5 py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-right-faq">
+                    <h5 class="sub-title mb-2">Guide</h5>
+                    <h3 class="title-style text-start"> Sajid D</h3>
+                    <p class="mt-4">
+                        Special thanks to <strong>Sajid Sir</strong>, our Django developer and guide. 
+                        Sajid Sir taught us web development for 3 weeks and played a crucial role in helping us to develop this platform. 
+                        His expertise and support were invaluable in bringing our vision to our career.
+                    </p>
+                </div>
+                <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5">
+                    <img src="/assets/images/sir.jpg" alt="" class="img-fluid radius-image smaller-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="w3l-team-grids-sec py-5" id="team">
+        <div class="container pb-lg-5 pb-md-4 pb-2">
+            <h1 class="sub-title text-center">Team Members</h1>
+            <div class="row cards justify-content-center">
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <a href="#img" class="card">
+                        <img src="assets/images/sireena.jpg" class="card__image radius-image" alt="" />
+                        <!-- Removed card__overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <a href="#img" class="card">
+                        <img src="assets/images/lahariii.jpg" class="card__image radius-image" alt="" />
+                        <!-- Removed card__overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <a href="#img" class="card">
+                        <img src="assets/images/laasya.jpg" class="card__image radius-image" alt="" />
+                        <!-- Removed card__overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <a href="#img" class="card">
+                        <img src="assets/images/jahnavi.jpg" class="card__image radius-image" alt="" />
+                        <!-- Removed card__overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <a href="#img" class="card">
+                        <img src="assets/images/dharani.jpg" class="card__image radius-image" alt="" />
+                        <!-- Removed card__overlay -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="w3l-footer-16">
+        <div class="footer-top-16 py-5">
+            <div class="container pt-lg-5 pt-md-4 pt-2 pb-lg-4 pb-2">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <h3>About Us</h3>
+                        <p>This Society was established by Founder-cum-Secretary Sri Aluru Sambasiva Reddy in November 2007 in memory of his mother, 
+                            Late Smt. Aluru Narayanamma, to give shape to his firm belief that<b> “EDUCATION IS A KEY ENABLER FOR PROGRESS”.</b></p>
+                        <div class="columns-2 mt-4">
+                            <ul class="social">
+                               
+                                <li><a href="https://www.linkedin.com/school/sritatp/"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                
+                                <li><a href="https://www.srit.ac.in/"><i class="fab fa-google-plus-g"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6 column ps-xl-5 mt-sm-0 mt-4">
+                        <h3>Quick Link</h3>
+                        <ul class="footer-gd-16">
+                            <li><a href="{% url 'aboutpage' %}">About Us</a></li>
+                            <li><a href="{% url 'eventpage' %}">Events</a></li>
+                            
+                            <li><a href="{% url 'clubpage' %}">Clubs</a></li>
+                            <li><a href="{% url 'contactpage' %}">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-6 column ps-xl-5 pe-lg-0 mt-lg-0 mt-4">
+                        <h3>Contact Info</h3>
+                        <ul class="footer-contact-list">
+                            <li class=""><i class="fas fa-map-marker-alt"></i><span>515701,SRIT Rotarypuram Anantapur</span></li>
+                            <li class="mt-2"><i class="fas fa-phone-alt"></i><span><a href="tel:+9515611111">+9515611111</a></span></li>
+                        </ul>
+                        <div class="footer-botm mt-3">
+                            <h6>Open Hours:</h6>
+                            <p class="mt-2"><span>Mon - Fri</span> : 9:30Am - 4:30Pm</p>
+                            <p> <span>Sat - Sun</span> : CLOSED</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copy-section text-center py-4">
+            <p class="copy-text py-1">&copy; All rights reserved. Design by <a>
+                    We_5</a>
+            </p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    768: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
+    <script src="assets/js/theme-change.js"></script>
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+   
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
